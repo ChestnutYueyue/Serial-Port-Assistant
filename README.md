@@ -3,7 +3,8 @@
 </div>
 
 ## GUI使用PySide2
-[Github：](https://github.com/ChestnutYueyue/Serial-Port-Assistant)
+[Github仓库](https://github.com/ChestnutYueyue/Serial-Port-Assistant)
+<https://github.com/ChestnutYueyue/Serial-Port-Assistant>
 ## 演示
 ![演示](https://gitee.com/ricocosoul/Serial-Port-Assistant/blob/main/img/1.png)
 
