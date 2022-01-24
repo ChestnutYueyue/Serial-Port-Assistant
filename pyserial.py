@@ -3,7 +3,6 @@ from PySide2.QtWidgets import QApplication, QWidget
 from serial import Serial, STOPBITS_ONE, STOPBITS_ONE_POINT_FIVE, STOPBITS_TWO, FIVEBITS, SIXBITS, SEVENBITS, EIGHTBITS, \
     PARITY_NONE, PARITY_ODD, PARITY_EVEN, PARITY_MARK
 from serial.tools import list_ports
-
 from Ui_Windows import Ui_Form
 
 
