@@ -8,7 +8,7 @@
 [下载打包文件测试运行--->](https://gitee.com/ricocosoul/Serial-Port-Assistant/releases/v0.1-beta)
 
 ## 演示
-![演示](https://gitee.com/ricocosoul/Serial-Port-Assistant/raw/main/img/1.png)
+![演示](https://gitee.com/ricocosoul/Serial-Port-Assistant/raw/main/img/1.gif)
 
 ## 功能
 - [x] 自动获取端口号
