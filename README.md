@@ -5,6 +5,8 @@
 ## GUI使用PySide2
 [Github仓库](https://github.com/ChestnutYueyue/Serial-Port-Assistant)
 <https://github.com/ChestnutYueyue/Serial-Port-Assistant>
+[下载打包文件测试运行--->](https://gitee.com/ricocosoul/Serial-Port-Assistant/releases/v0.1-beta)
+
 ## 演示
 ![演示](https://gitee.com/ricocosoul/Serial-Port-Assistant/raw/main/img/1.png)
 
