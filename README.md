@@ -5,7 +5,8 @@
 ## GUI使用PySide2
 
 ## 演示
-![](img/1.png)
+![演示](https://github.com/ChestnutYueyue/Serial-Port-Assistant/blob/main/img/1.png)
+
 ## 功能
 - [x] 自动获取端口号
 - [x] 波特率设置
