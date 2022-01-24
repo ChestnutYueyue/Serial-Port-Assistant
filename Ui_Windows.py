@@ -151,4 +151,3 @@ class Ui_Form(object):
         self.label1.setText(QCoreApplication.translate("Form", u"\u53d1\u9001:0", None))
         self.label2.setText(QCoreApplication.translate("Form", u"\u63a5\u53d7:0", None))
     # retranslateUi
-
