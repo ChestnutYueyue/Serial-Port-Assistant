@@ -6,7 +6,7 @@
 + 编程语言：python 3.8.10
 + 图像界面：PySide2
 + 串口通信：pyserial
-测试运行IDE：vscode和PyCharm
++ 测试运行IDE：vscode和PyCharm
 
 ## 下载运行文件
 [Github仓库](https://github.com/ChestnutYueyue/Serial-Port-Assistant) \
