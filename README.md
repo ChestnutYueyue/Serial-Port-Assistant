@@ -9,11 +9,14 @@
 + 测试运行IDE：vscode和PyCharm
 ![演示](https://gitee.com/ricocosoul/Serial-Port-Assistant/raw/main/img/1.png)
 
+## Github仓库
++ [Github仓库](https://github.com/ChestnutYueyue/Serial-Port-Assistant)
+
 ## 下载运行文件
-[Github仓库](https://github.com/ChestnutYueyue/Serial-Port-Assistant) \
-[releases](https://gitee.com/ricocosoul/Serial-Port-Assistant/releases/)
++ [releases](https://gitee.com/ricocosoul/Serial-Port-Assistant/releases/)
 
 ## 实现的功能
+
 ### 端口设置选项
 - [x] 自动获取端口号
 - [x] 波特率设置
@@ -21,11 +24,13 @@
 - [x] 效验位设置
 - [x] 停止位设置
 - [x] 按钮状态切换
+
 ### 接收设置选项
 - [x] 十六进制设置
 - [x] 暂停接收显示
 - [x] 消息循环接收
 ### 字符编码设置选项
+
 #### 同步支持发送和接收字符编码设置
 - [x] GBK
 - [x] UTF-8
