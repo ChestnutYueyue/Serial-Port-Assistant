@@ -2,9 +2,9 @@
 <h1 align="center">串口通信</h1>
 </div>
 ## 开发环境
-- 编程语言：python 3.8.10
-- 图像界面：PySide2
-- 串口通信：pyserial
+-编程语言：python 3.8.10
+-图像界面：PySide2
+-串口通信：pyserial
 测试运行IDE：vscode和PyCharm
 
 ## 下载运行文件
