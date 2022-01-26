@@ -7,13 +7,11 @@
 + 图像界面：PySide2
 + 串口通信：pyserial
 + 测试运行IDE：vscode和PyCharm
+![演示](https://gitee.com/ricocosoul/Serial-Port-Assistant/raw/main/img/1.png)
 
 ## 下载运行文件
 [Github仓库](https://github.com/ChestnutYueyue/Serial-Port-Assistant) \
 [releases](https://gitee.com/ricocosoul/Serial-Port-Assistant/releases/)
-
-## 演示
-![演示](https://gitee.com/ricocosoul/Serial-Port-Assistant/raw/main/img/1.png)
 
 ## 实现的功能
 ### 端口设置选项
