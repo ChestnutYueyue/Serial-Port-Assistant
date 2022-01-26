@@ -9,8 +9,8 @@
 + 测试运行IDE：vscode和PyCharm
 ![演示](https://gitee.com/ricocosoul/Serial-Port-Assistant/raw/main/img/1.png)
 
-## Github仓库
-+ [Github仓库](https://github.com/ChestnutYueyue/Serial-Port-Assistant)
+## Gitee仓库
++ [Gitee仓库](https://gitee.com/ricocosoul/Serial-Port-Assistant)
 
 ## 下载运行文件
 + [releases](https://gitee.com/ricocosoul/Serial-Port-Assistant/releases/)
