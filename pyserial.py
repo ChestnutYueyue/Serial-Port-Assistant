@@ -1,5 +1,4 @@
 import re
-import os
 from sqlite3 import Time
 from serial.tools import list_ports
 from serial import Serial, STOPBITS_ONE, STOPBITS_ONE_POINT_FIVE, STOPBITS_TWO, FIVEBITS, SIXBITS, SEVENBITS, EIGHTBITS, \
@@ -9,7 +8,6 @@ from PySide2.QtCore import QThread, Signal, QMutex, QWaitCondition, Qt, QSize
 from PySide2.QtUiTools import QUiLoader
 from PySide2.QtGui import QIcon
 from untitled import Ui_Form
-from pathlib import Path
 
 
 class ReceiveMessage(QThread):
