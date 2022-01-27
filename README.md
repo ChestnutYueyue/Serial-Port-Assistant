@@ -7,7 +7,10 @@
 > + 图像界面：PySide2
 > + 串口通信：pyserial
 > + 测试运行IDE：vscode和PyCharm \
-> ![演示](https://gitee.com/ricocosoul/Serial-Port-Assistant/raw/main/img/1.png)
+> ![演示](https://github.com/ChestnutYueyue/Serial-Port-Assistant/blob/main/img/1.png?raw=true)
+
+> ## 演示
+> ![演示](https://github.com/ChestnutYueyue/Serial-Port-Assistant/blob/main/img/%E6%BC%94%E7%A4%BA.gif?raw=true)
 
 > ## Gitee仓库
 > + [Gitee仓库](https://gitee.com/ricocosoul/Serial-Port-Assistant)
