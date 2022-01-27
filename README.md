@@ -2,20 +2,22 @@
 <h1 align="center">串口通信</h1>
 </div>
 
-## 开发环境
-+ 编程语言：python 3.8.10
-+ 图像界面：PySide2
-+ 串口通信：pyserial
-+ 测试运行IDE：vscode和PyCharm \
-![演示](https://gitee.com/ricocosoul/Serial-Port-Assistant/raw/main/img/1.png)
+> ## 开发环境
+> + 编程语言：python 3.8.10
+> + 图像界面：PySide2
+> + 串口通信：pyserial
+> + 测试运行IDE：vscode和PyCharm \
+> ![演示](https://gitee.com/ricocosoul/Serial-Port-Assistant/raw/main/img/1.png)
 
-## Gitee仓库
-+ [Gitee仓库](https://gitee.com/ricocosoul/Serial-Port-Assistant)
+> ## Gitee仓库
+> + [Gitee仓库](https://gitee.com/ricocosoul/Serial-Port-Assistant)
 
-## 下载运行文件
-+ [releases](https://gitee.com/ricocosoul/Serial-Port-Assistant/releases/)
+> ## 下载运行文件
+> + [releases](https://gitee.com/ricocosoul/Serial-Port-Assistant/releases/)
 
-## 实现的功能
+> ## 修复的BUG
+> + [x] 16进制发送以修复功能
+> + [x] 接收文字颜色做出的改变
 
 > ### 端口设置选项
 > - [x] 自动获取端口号
