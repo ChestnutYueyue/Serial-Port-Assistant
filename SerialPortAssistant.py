@@ -153,7 +153,8 @@ class MainWindow(QWidget):
         '''复选框设置'''
         self.ui.com.clear()
         ports = list(list_ports.comports())
-        temp = [f'COM{i + 1}' for i, j in enumerate(ports)]
+        temp = [i[0] for i in ports]
+        print(temp)
         if len(ports):
             self.ui.com.addItems(temp)
 
@@ -265,7 +266,8 @@ class MainWindow(QWidget):
                 self.ser.write(Text.encode(self.encodings))
             Text += '\n'
             self.ser.write(Text.encode(self.encodings))
-            self.ui.textBrowser.append(f'<font color=\"#FF00FF\">{">> " + Text}</font>')
+            self.ui.textBrowser.append(
+                f'<font color=\"#FF00FF\">{">> " + Text}</font>')
             self.SendCount += 1
             self.ui.label1.setText(f'发送：{self.SendCount}')
 
@@ -274,7 +276,8 @@ class MainWindow(QWidget):
         if self.Reflag and self.ui.checkBox_5.isChecked():
             self.Seflag = True
             Text = self.ui.textEdit.toPlainText() + '\n'
-            self.thse = SendMessage(self.ser, Text, self.ui.lineEdit.text(), self.encodings, self.SendCount)
+            self.thse = SendMessage(
+                self.ser, Text, self.ui.lineEdit.text(), self.encodings, self.SendCount)
             self.thse.update_date.connect(self.DisplayWriteSerial)
             self.thse.update_count.connect(self.label1Display)
             self.thse.start()
@@ -290,7 +293,8 @@ class MainWindow(QWidget):
         if self.ui.checkBox_4.isChecked():
             Text = binascii.unhexlify(Text).decode(self.encodings)
         self.thse.signal(Text)
-        self.ui.textBrowser.append(f'<font color=\"#FF00FF\">{">> " + string}</font>')
+        self.ui.textBrowser.append(
+            f'<font color=\"#FF00FF\">{">> " + string}</font>')
 
     def label1Display(self, count):
         '''槽方法，显示发送的数量'''
