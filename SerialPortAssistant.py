@@ -154,7 +154,7 @@ class MainWindow(QWidget):
         self.ui.com.clear()
         ports = list(list_ports.comports())
         temp = [i[0] for i in ports]
-        print(temp)
+        temp.sort(key=lambda x: x[-1])
         if len(ports):
             self.ui.com.addItems(temp)
 
