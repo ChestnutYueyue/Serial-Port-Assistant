@@ -150,7 +150,7 @@ class MainWindow(QWidget):
         self.ui.buttonGroup.buttonClicked.connect(self.Encodings)
 
     def Combox(self):
-        '''复选框设置'''
+        '''端口复选框设置'''
         self.ui.com.clear()
         ports = list(list_ports.comports())
         temp = [i[0] for i in ports]
@@ -159,26 +159,26 @@ class MainWindow(QWidget):
             self.ui.com.addItems(temp)
 
     def Bps(self):
-        '''复选框设置'''
+        '''波特率复选框设置'''
         temp = ['600', '1200', '2400', '4800', '9600', '19200', '38400']
         self.ui.bps.addItems(temp)
 
     def Stopbits(self):
-        '''复选框设置'''
+        '''停止位复选框设置'''
         self.stopbits = {'One': STOPBITS_ONE,
                          'OnePointFive': STOPBITS_ONE_POINT_FIVE, 'Two': STOPBITS_TWO}
         for self.Key in self.stopbits:
             self.ui.stopbits.addItem(self.Key)
 
     def Bytesize(self):
-        '''复选框设置'''
+        '''数据位复选框设置'''
         self.bytesize = {'5': FIVEBITS, '6': SIXBITS,
                          '7': SEVENBITS, '8': EIGHTBITS}
         for self.Key in self.bytesize:
             self.ui.bytesize.addItem(self.Key)
 
     def Parity(self):
-        '''复选框设置'''
+        '''效验位复选框设置'''
         self.parity = {'None': PARITY_NONE, 'Odd': PARITY_ODD,
                        'Even': PARITY_EVEN, 'MARK': PARITY_MARK}
         for self.Key in self.parity:
