@@ -22,6 +22,7 @@ class Ui_Form(object):
         self.gridLayout_4.setContentsMargins(0, -1, 0, 0)
         self.textEdit = QPlainTextEdit(Form)
         self.textEdit.setObjectName(u"textEdit")
+        self.textEdit.setPlaceholderText('Enter')
         sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -45,6 +46,7 @@ class Ui_Form(object):
         self.textBrowser.setObjectName(u"textBrowser")
         sizePolicy.setHeightForWidth(self.textBrowser.sizePolicy().hasHeightForWidth())
         self.textBrowser.setSizePolicy(sizePolicy)
+        self.textBrowser.document().setMaximumBlockCount(300)
         self.textBrowser.setMinimumSize(QSize(0, 200))
         self.textBrowser.setMaximumSize(QSize(16777215, 16777215))
 
@@ -265,9 +267,10 @@ class Ui_Form(object):
         self.lineEdit.setObjectName(u"lineEdit")
         sizePolicy.setHeightForWidth(self.lineEdit.sizePolicy().hasHeightForWidth())
         self.lineEdit.setSizePolicy(sizePolicy)
-        self.lineEdit.setMinimumSize(QSize(86, 0))
+        self.lineEdit.setMinimumSize(QSize(110, 0))
         self.lineEdit.setMaximumSize(QSize(16777215, 20))
-
+        self.lineEdit.setPlaceholderText("请输入整数和小数")
+        self.lineEdit.setValidator(QRegExpValidator(QRegExp('[0-9]*\d.\d*[^\D\W]$'),Form))
         self.horizontalLayout.addWidget(self.lineEdit)
 
 
