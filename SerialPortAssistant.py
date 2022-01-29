@@ -129,8 +129,6 @@ class MainWindow(QWidget):
         '''初始化'''
         self.ui = Ui_Form()
         self.ui.setupUi(self)
-        self.ui.textEdit.setPlaceholderText('Enter')
-        self.ui.textBrowser.document().setMaximumBlockCount(300)
         self.SendCount = 0
         self.RendCount = 0
         self.encodings = 'GBK'
@@ -196,8 +194,6 @@ class MainWindow(QWidget):
     def OpenSerial(self):
         '''打开串口，创建线程'''
         self.ui.textBrowser.clear()
-        if len(self.ui.textBrowser.toPlainText()):
-            self.ui.textBrowser.append('连接成功!')
         try:
             self.ser = Serial(self.ui.com.currentText(),
                               int(self.ui.bps.currentText()),
@@ -205,22 +201,25 @@ class MainWindow(QWidget):
                               self.parity[self.ui.parity.currentText()],
                               self.stopbits[self.ui.stopbits.currentText()])
             if self.ser.is_open:
+                self.ui.textBrowser.append('连接成功！')
+                self.ui.textBrowser.ensureCursorVisible()
                 self.Reflag = True
                 self.thre = ReceiveMessage(
                     self.ser, self.RendCount, self.encodings)
                 self.thre.update_date.connect(self.handleDisplay)
                 self.thre.update_count.connect(self.label2Display)
                 self.thre.start()
-        except:
-            self.ui.textBrowser.append('连接失败!')
+        except Exception as err:
+            '''添加错误显示信息！'''
+            self.ui.textBrowser.append(re.sub(r'[\'。]','',': '.join(re.findall(r"('.*?')",''.join(err.args)))))
             self.ui.textBrowser.ensureCursorVisible()
 
     def CloseSerial(self):
         '''关闭串口，销毁线程'''
-        if len(self.ui.textBrowser.toPlainText()):
-            self.ui.textBrowser.clear()
-        self.ser.close()
-        self.thre.stop()
+        self.ui.textBrowser.clear()
+        if self.Reflag:
+            self.ser.close()
+            self.thre.stop()
 
     def pauseMessage(self):
         '''暂停接收线程'''
