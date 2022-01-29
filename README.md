@@ -18,6 +18,12 @@
 > ## 下载运行文件
 > + [releases](https://gitee.com/ricocosoul/Serial-Port-Assistant/releases/)
 
+>## V1.3.0版更新和修复
+> + [x] 对打开端口失败的错误信息进行了精准的系统提示
+> + [x] 对时间设置框进行了输入限制只能输入小数和整数
+> + [x] 修复了因为打开端口失败导致的无法关闭问题
+> 更新内容实现均基于正则表达式，至于什么是[正则表达式](https://www.w3cschool.cn/zhengzebiaodashi/regexp-syntax.html)？
+
 > ## v1.2.0版修复的bug
 > + [x] 修复了获取端口号不正确的问题
 > + [x] 添加了对获取的端口号排序的功能
